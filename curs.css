@@ -23,11 +23,11 @@ body {
     position: relative;
     width: 1660px;
     height: 450px;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 57px auto;
     background-color: #000000;
     background-repeat: no-repeat;
-    background-position: center center;
-    /* background-size: cover; */
+    background-position: top;
+    background-size: cover;
     background-image: url(./img/banner-bg.jpg);
 }
 
@@ -35,7 +35,7 @@ body {
     display: block;
     content: "";
     position: absolute;
-    width: 1660px;
+    width: 100%;
     height: 100%;
     top: 0; left: 0; right: 0; bottom: 0;
     background-color: #000000;
@@ -45,7 +45,7 @@ body {
 .header-top-panel {
     display: flex;
     box-sizing: border-box;
-    padding: 29px 15px;
+    padding: 29px 0px;
     width: 1170px;
     justify-content: space-between;
     margin: auto;
@@ -53,6 +53,7 @@ body {
 }
 
 .header-logo  {
+    margin-left: 3px;
     width: 179px;
     height: 41px;
 }
@@ -68,7 +69,7 @@ body {
 }
 
 .menu-list-item {
-    padding-left: 26px;
+    padding-left: 30px;
     display: inline;
     text-decoration: none;
 }
@@ -88,7 +89,7 @@ body {
     box-sizing: border-box;
     width: 1170px;
     margin: auto;
-    padding: 41px 15px;
+    padding: 75px 15px;
     justify-content:center;
     text-align: center;
     font-size: 45px;
@@ -100,9 +101,10 @@ body {
 }
 
 .aside-box {
-    width: 100%;
+    width: 1660px;
     height: 380px;
     margin: 0 auto 60px auto;
+    align-items:center;
 }
 
 .title-t {
@@ -117,15 +119,14 @@ body {
 .aside-title, .products-title {
     display: flex;
     position: relative;
-    /* width: 1170px; */
-    height: 60px;
-    margin: 0 auto;
+    height: 50px;
+    margin: 0px auto;
     justify-content:center;
 }
 
 .aside-title::after {
     position: absolute;
-    top: 30px;
+    top: 35px;
     content: "";
     width: 66px;
     height: 3px;
@@ -135,8 +136,9 @@ body {
 
 .aside-list {
     display: flex;
+    width: 100%;
     list-style-type: none;
-    margin: auto;
+    /* margin: auto; */
     padding: 0;
 
 }
@@ -190,9 +192,9 @@ body {
 
 .aside-border {
     opacity: 1;
-    margin: auto auto 15px auto;
-    width: 370px;
-    min-height: 146px;
+    margin: auto auto 16px 20px;
+    width: 365px;
+    min-height: 140px;
     max-height: 300px;
     background-color: rgba(0,0,0,0);
     border: 3px solid #b59f5b;
@@ -200,8 +202,9 @@ body {
 }
 
 .category {
+    word-spacing: 15px;
     font-size: 14px;
-    line-height: 40px;
+    line-height: 32px;
     text-transform: uppercase;
     color: #b59f5b;
     font-weight: 700;
@@ -209,8 +212,7 @@ body {
 }
 
 .lifestyle {
-    margin-top: 35px;
-    margin-left: 35px;
+    margin: 29px auto -4px 34px;
 }
 
 .list-title {
@@ -220,7 +222,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 31px;
     margin-bottom: 35px;
     font-family: "Open Sans B", sans-serif;
 }
@@ -228,7 +230,7 @@ body {
 .main-box {
     width: 1170px;
     height: auto;
-    margin: 0 auto;
+    margin: 7px auto;
 }
 .main-posts {
     display: flex;
@@ -244,8 +246,7 @@ body {
 
 .last-post {
     display: flex;
-    margin-bottom: 62px;
-    /* background-color: aquamarine; */
+    margin-bottom: 60px;
 }
 
 .post-picture {
@@ -275,7 +276,7 @@ body {
 
 .data-author{
     display: flex;
-    margin-top: 15px;
+    margin-top: 17px;
     margin-bottom: 0;
 }
 
@@ -305,7 +306,7 @@ body {
 }
 
 .frame-text {
-    margin-top: 40px;
+    margin-top: 35px;
     width: 365px;
     max-height: 85px;
 }
@@ -326,16 +327,16 @@ body {
     display: flex;
     position: relative;
     width: 270px;
-    height: 55px;
+    height: 56px;
     margin: 0 auto;
     justify-content: center;
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .title-posts::after {
     position: absolute;
-    top: 25px;
+    top: 27px;
     content: "";
     width: 66px;
     height: 3px;
@@ -347,7 +348,7 @@ body {
     display: flex;
     width: 270px;
     height: 70px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 
@@ -393,7 +394,7 @@ body {
 
 .search-box {
     display: flex;
-
+    margin: 59px auto 2px 0px;
     width: 270px;
     height: 48px;
  
@@ -443,7 +444,7 @@ body {
     padding: 0;
     outline: none;
     border: none;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
     width: 270px;
     height: 48px;
     background-color: #f4f7f6;
@@ -471,7 +472,7 @@ body {
 }
 
 .tags {
-    margin-bottom: 60px;
+    margin-bottom: 54px;
 }
 
 .tags-style {
@@ -482,9 +483,9 @@ body {
 .tag-item {
     display: inline-block;
     width: auto;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     line-height: 24px;
-    padding: 0 12px;
+    padding: 0 10px;
     max-width: 150px;
     height: auto;
     border: 3px solid #eeeeee;;
@@ -493,9 +494,9 @@ body {
 .categories-container {
     list-style-type: none;
     width: 270px;
-    margin: 0;
+    margin-top: -17px;
     padding: 0;
-    justify-content: left;
+    /* justify-content: left; */
 }
 
 .categories-item {
@@ -507,7 +508,7 @@ body {
     display: flex;
     text-decoration: none;
     font-size: 14px;
-    line-height: 47px;
+    line-height: 46px;
     color: #000000;
     font-weight: 700;
     font-family: "Open Sans B", sans-serif;
@@ -541,7 +542,7 @@ body {
 
 .products-title::after {
     position: absolute;
-    top: 30px;
+    top: 36px;
     content: "";
     width: 66px;
     height: 3px;
@@ -556,15 +557,20 @@ body {
     height: 440px;
     list-style-type: none;
     margin: auto;
-    padding: 0 0 60px 0;
-    justify-content: space-around;
+    padding: 18px 0 60px 0;
+    /* justify-content: space-around; */
 }
 
 .product-list-item {
     display: inline-block;
     width: 300px;
     height: 440px;
-    /* background-color: #b2c8f2; */
+    background-color: #b2c8f2;
+    margin: auto;
+}
+
+.product-list-item:nth-child(n+2) {
+    margin-left: 87px;
 }
 
 .product-container {
@@ -575,6 +581,10 @@ body {
     height: 440px;
     /* background-color: #3bfa71; */
     justify-content: start;
+}
+
+.product-container:nth-child(n+2) {
+    margin-left: 40px;
 }
 
 .product-picture {
@@ -591,7 +601,7 @@ body {
 }
 
 .product-title {
-    margin-top: 10px;
+    margin-top: 17px;
     width: 300px;
 }
 
@@ -607,7 +617,8 @@ body {
 }
 
 .buttom {
-    padding-top: 3px;
+    padding-top: 8px;
+    word-spacing: normal;
     box-sizing:border-box;
     display: flex;
     justify-content:center;
@@ -683,7 +694,7 @@ body {
 .shop-border {
     box-sizing: border-box;
     position: absolute;
-    padding: 29px 0 0 24px ;
+    padding: 30px 0 0 21px ;
     bottom: 0;
     left: -25px;
     width: 350px;
@@ -695,7 +706,7 @@ body {
 
 .footer-link {
     display: flex;
-    margin: 60px auto 0 auto;
+    margin: 66px auto 0 auto;
     width: 1170px;
     height: 82px;
     background-color: #f4f7f6;
@@ -749,7 +760,7 @@ body {
 
 .footer-bottom {
     display: flex;
-    margin: 60px auto 0 auto;
+    margin: 12px auto 0 auto;
     width: 1170px;
     height: 130px;
 }
