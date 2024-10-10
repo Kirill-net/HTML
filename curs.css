@@ -389,7 +389,7 @@ body {
     position: relative;
     width: 1170px;
     height: 440px;
-    background-color: rgb(56, 206, 223);
+    /* background-color: rgb(56, 206, 223); */
 }
 
 .search-box {
@@ -565,7 +565,7 @@ body {
     display: inline-block;
     width: 300px;
     height: 440px;
-    background-color: #b2c8f2;
+    /* background-color: #b2c8f2; */
     margin: auto;
 }
 
