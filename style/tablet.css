@@ -189,8 +189,21 @@ h5 {
     display: inline-block;
     box-sizing: border-box;
     position: relative;
-    width: 414px;
+    /* width: 414px; */
     min-height: 319px;
+}
+
+@media (orientation: landscape) {
+    .aside-list-item {
+        width: calc(25% - 2px);
+        min-height: 246px;
+        margin-bottom: 4px;
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+        /* width: 414px; */
+        min-height: 319px;
+    }
 }
 
 .image {
@@ -232,7 +245,7 @@ h5 {
 .aside-border {
     opacity: 1;
     margin: auto auto 16px auto;
-    width: auto;
+    width: 87%;
     min-height: 140px;
     max-height: auto;
     background-color: rgba(0,0,0,0);
@@ -270,7 +283,7 @@ h5 {
 }
 
 .list-title {
-    width: 305px;
+    /* width: 305px; */
     line-height: 22px;
     color: #ffffff;
     margin-left: 31px;
@@ -285,15 +298,14 @@ h5 {
 }
 
 .main-posts {
-/* width: calc(100% - 70px); */
+    width: 92%;
     display: flex;
     padding: 0;
-    margin-bottom: -2px;
-    margin-left: 30px;
+    margin: 0 auto -2px auto;
 }
 
 .list-container {
-    width: 60%;
+    width: 118%;
     height: auto;
     margin-top: 4px;
 }
@@ -378,9 +390,8 @@ h5 {
     margin-top: 3px;
     display: flex;
     flex-direction: column;
-    width: 270px;
+    /* width: 270px; */
     height: auto;
-    /* background-color: rgb(193, 253, 253); */
 }
 
 .new-posts {
@@ -831,13 +842,19 @@ h5 {
     width: 16px;
     height: 20px;
     background-image: url(../svg/001-pinterest.svg);
-    
 }
-.link-facebook {
+
+.link-dribbble {
+    width: 20px;
+    height: 20px;
+    background-image: url(../svg/001-dribbble.svg);
+}
+
+/* .link-facebook {
     width: 12px;
     height: 20px;
     background-image: url(../svg/002-facebook-logo.svg);
-}
+} */
 
 .link-tumblr {
     width: 13px;
@@ -845,17 +862,17 @@ h5 {
     background-image: url(../svg/003-tumblr.svg);
 }
 
-.link-twitter {
+/* .link-twitter {
     width: 25px;
     height: 21px;
     background-image: url(../svg/004-twitter.svg);
-}
+} */
 
-.link-instagram {
+/* .link-instagram {
     width: 20px;
     height: 20px;
     background-image: url(../svg/005-instagram.svg);
-}
+} */
 
 .footer-bottom {
     display: flex;
@@ -874,9 +891,6 @@ h5 {
 }
 
 
-.aside-list-item {
-        width: calc(50% - 2px);
-        min-height: 246px;
-    }
+
 
     /* .product-list-item */

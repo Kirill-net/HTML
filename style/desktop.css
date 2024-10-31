@@ -218,7 +218,7 @@ h3, h4 {
 .aside-border {
     opacity: 1;
     margin: auto auto 16px auto;
-    width: 365px;
+    width: calc(100% - 40px);
     min-height: 140px;
     max-height: auto;
     background-color: rgba(0,0,0,0);
@@ -799,17 +799,24 @@ h3, h4 {
 
 .socials-item:nth-child(n+2) {margin-left: 27px;}
 
+.link-dribbble {
+    width: 20px;
+    height: 20px;
+    background-image: url(../svg/001-dribbble.svg);
+}
+
 .link-pinterest {
     width: 16px;
     height: 20px;
     background-image: url(../svg/001-pinterest.svg);
     
 }
-.link-facebook {
+
+/* .link-facebook {
     width: 12px;
     height: 20px;
     background-image: url(../svg/002-facebook-logo.svg);
-}
+} */
 
 .link-tumblr {
     width: 13px;
@@ -817,7 +824,7 @@ h3, h4 {
     background-image: url(../svg/003-tumblr.svg);
 }
 
-.link-twitter {
+/* .link-twitter {
     width: 25px;
     height: 21px;
     background-image: url(../svg/004-twitter.svg);
@@ -827,7 +834,7 @@ h3, h4 {
     width: 20px;
     height: 20px;
     background-image: url(../svg/005-instagram.svg);
-}
+} */
 
 .footer-bottom {
     display: flex;
@@ -844,44 +851,3 @@ h3, h4 {
     /* font-weight: 700; */
     font-family: "Open Sans B";
 }
-
-
-
-/* @media (min-width:641px) and (max-width:1200px) {
-    .aside-list, .product-list {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .product-box, .footer-bottom,
-    .footer-link, .header-top-panel, .header-title {width: 100%;}
-
-    .main-box {width: calc(100% - 70px);}
-
-    .product-list-item:nth-child(n+2) {
-        margin-left: 4px;
-    }
-
-    .product-list-item, .aside-list-item {
-        width: calc(50% - 2px);
-        min-height: 246px;
-    }
-
-    .aside-list {
-        justify-content: space-between;
-    }
-
-    .l-posts {
-        flex-direction: column;
-        margin-left: 35px;
-    }
-
-    .frame {
-        margin-top: 10px;
-        margin-left: 0;
-    }
-
-    .aside-border {width: auto;}
-
-    .list-container {width: 59%;}
-} */
