@@ -207,7 +207,7 @@ h5 {
 }
 
 .aside-list-item {
-    width: calc(100% - 2px);
+    width: 100%;
     min-height: 246px;
     margin-bottom: 4px;
     display: inline-block;
@@ -219,7 +219,7 @@ h5 {
 
 @media (orientation: landscape) {
     .aside-list-item {
-        width: calc(25% - 2px);
+        width: calc(50% - 2px);
         min-height: 246px;
         margin-bottom: 4px;
         display: inline-block;
