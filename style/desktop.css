@@ -106,7 +106,7 @@ h3, h4 {
     text-decoration: none;
 }
 
-.menu-tablet {display: none;}
+.menu-tablet, .menu-mobile {display: none;}
 
 .menu-link {
     font-size: 13px;
@@ -121,7 +121,7 @@ h3, h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 1170px;
+    width: 720px;
     margin: auto;
     padding: 75px 15px;
     justify-content:center;
@@ -227,7 +227,7 @@ h3, h4 {
 }
 
 .category {
-    word-spacing: 15px;
+    /* word-spacing: 15px; */
     font-size: 14px;
     line-height: 32px;
     text-transform: uppercase;
@@ -658,6 +658,18 @@ h3, h4 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.drawing1 {
+    background-image: url(../img/shop-item-desk1.jpg);
+}
+
+.drawing2 {
+    background-image: url(../img/shop-item-desk2.jpg);
+}
+
+.drawing3 {
+    background-image: url(../img/shop-item-desk3.jpg);
 }
 
 .product-title {
