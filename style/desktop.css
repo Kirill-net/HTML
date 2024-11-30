@@ -19,7 +19,7 @@ body {
     font-style: normal;
 }
 
-h1, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     /* font-weight: 700; */
     color: #0f0d0e;
     text-transform: uppercase;
@@ -31,7 +31,7 @@ h1 {
     line-height: 75px;
 }
 
-h3, h4 {
+h2, h3 {
     font-size: 20px;
     line-height: 29px;
 }
@@ -171,7 +171,7 @@ h3, h4 {
     display: inline-block;
     box-sizing: border-box;
     position: relative;
-    width: 414px;
+    width: 25%;
     min-height: 319px;
 }
 
@@ -862,4 +862,56 @@ h3, h4 {
     color: #999999;
     /* font-weight: 700; */
     font-family: "Open Sans B";
+}
+
+._hidden {
+    display: none;
+}
+
+.background {
+    display: block;
+    z-index: 2;
+    content: "";
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #000000;
+    opacity: 0.6;
+}
+
+.popup-box {
+    z-index: 3;
+    top: calc(50% - 295px);
+    left: calc(50% - 195px);
+    position: fixed;
+    width: 390px;
+    height: 590px;
+    background-color: white;
+}
+
+.title-pop {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 56px;
+    margin: 50px auto auto auto;
+    justify-content: center;
+    line-height: 29px;
+}
+
+.title-pop::after {
+    position: absolute;
+    top: 33px;
+    content: "";
+    width: 66px;
+    height: 3px;
+    opacity: 0.4;
+    background-color: #b59f5b;
+}
+
+.option {
+    display: flex;
+    width: 330px;
+    margin: auto auto 20px auto;
 }
