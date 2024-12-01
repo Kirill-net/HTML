@@ -521,20 +521,33 @@
     <div class="popup-box">
       <h4 class="title-pop">ваш фидбек</h4>
       <form>
-        <span>Как часто вы заходите на сайт?</span>
+        <span class="text-pop">Как часто вы заходите на сайт?</span>
         <select class="option">
-          <option>Почти каждый день</option>
+          <option class="pref" selected>Почти каждый день</option>
         </select>
-        <span>Вы подписаны на email рассылку?</span>
-        <div class="email-pop">
-          <input type="radio" name="email" id="yes" checked />
-            <label for="yes">Да</label>
-          <input type="radio" name="email" id="no" />
-            <label for="no">Нет</label>
+        <div class="form-row">
+          <span class="form-hint">Вы подписаны на email рассылку?</span>
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group">
+            <span class="radio-group-text">Да</span>
+          </label>
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group">
+            <span class="radio-group-text">Нет</span>
+          </label>	
+        </div>	
+        <span class="text-pop">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+        <div>
+        <textarea class="textarea-pop" rows="3" placeholder="      Может, больше рецептов?"></textarea>
         </div>
-
-      </form>
+        <input type="submit" class="btm-pop">
+        </form>
     </div>
-    </div>
+  </div>
   </body>
 </html>
+
+
+
+
+
