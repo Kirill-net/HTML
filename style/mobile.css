@@ -933,7 +933,165 @@ h5 {
     font-family: "Open Sans B";
 }
 
+._hidden {
+    display: none;
+}
 
+.background {
+    display: block;
+    z-index: 2;
+    content: "";
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #000000;
+    opacity: 0.6;
+}
 
+.popup-box {
+    z-index: 3;
+    top: calc(50% - 275px);
+    left: calc(50% - 165px);
+    position: fixed;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 330px;
+    height: 550px;
+    background-color: white;
+}
 
-    /* .product-list-item */
+.title-pop {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 30px auto 45px auto;
+    justify-content: center;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.title-pop::after {
+    position: absolute;
+    top: 33px;
+    content: "";
+    width: 66px;
+    height: 3px;
+    opacity: 0.4;
+    background-color: #b59f5b;
+}
+
+.option-box {
+    width: 100%;
+    background-color: #f4f7f6;
+}
+
+.option-pop {
+    display: flex;
+    width: calc(100% - 35px);
+    height: 45px;
+    margin: 3px auto 35px auto;
+    background-color: #f4f7f6;
+    outline: none;
+    border: none;
+    
+    font-size: 13px;
+    color: #999999;
+    font-weight: 400;
+    font-family: "Open Sans R", sans-serif;
+}
+
+.option-pop {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.option-pop {
+	background-image: url("../svg/form-arrows.svg");
+	background-repeat: no-repeat;
+	background-position: right 0  center;
+    background-size: 9px;
+}
+ 
+.textarea-pop {
+    resize: none;
+    width: 100%;
+    margin-top: 3px;
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: #f4f7f6;
+    font-size: 13px;
+    line-height: 40px;
+    color: #999999;
+    font-weight: 400;
+    font-family: "Open Sans R", sans-serif;
+}
+
+.email-pop {
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+
+.btm-pop {
+    margin-top: 24px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border: none;
+    font-size: 14px;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #b59f5b;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* font-weight: 700; */
+    font-family: "Open Sans B", sans-serif;
+}
+
+.form-row {
+    margin-bottom: 30px;
+}
+
+.form-hint {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.radio {
+    display: none;
+	/* position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px; 
+	width: 1px;  */
+}
+
+.radio-group {
+    font-size: 15px;
+}
+
+.radio-group:nth-of-type(n+2) {
+    margin-left: 30px;
+}
+
+.radio-group-text::before {
+    margin-right: 6px;
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url("../svg/form-empty-circle.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px;
+}
+
+.radio-group-text::before {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.radio:checked + .radio-group-text::before {
+	background-image: url("../svg/form-circle.svg");
+}
