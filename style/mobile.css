@@ -951,15 +951,28 @@ h5 {
 
 .popup-box {
     z-index: 3;
-    top: calc(50% - 275px);
+    top: calc(50% - 272px);
     left: calc(50% - 165px);
     position: fixed;
     box-sizing: border-box;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 27px;
+    padding-right: 27px;
     width: 330px;
-    height: 550px;
+    height: 545px;
     background-color: white;
+}
+
+.popup-box::before {
+    top: -32px;
+    right: 0;
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-image: url("../svg/form-x.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 28px;
 }
 
 .title-pop {

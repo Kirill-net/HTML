@@ -893,6 +893,19 @@ h2, h3 {
     background-color: white;
 }
 
+.popup-box::before {
+    top: -40px;
+    right: 0;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../svg/form-x.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
 .title-pop {
     display: flex;
     position: relative;
